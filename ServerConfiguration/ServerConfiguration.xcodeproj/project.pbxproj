@@ -206,6 +206,8 @@
 		};
 		84D267922CE49CDB00E63F5D /* DevDebug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 84D2677E2CE49CD700E63F5D /* ServerConfiguration */;
+			baseConfigurationReferenceRelativePath = ServerConfig/DevConfig.xcconfig;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -270,6 +272,8 @@
 		};
 		84D267932CE49CDB00E63F5D /* DevRelease */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 84D2677E2CE49CD700E63F5D /* ServerConfiguration */;
+			baseConfigurationReferenceRelativePath = ServerConfig/DevConfig.xcconfig;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -327,6 +331,8 @@
 		};
 		84D267C32CE49E6500E63F5D /* StagingDebug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 84D2677E2CE49CD700E63F5D /* ServerConfiguration */;
+			baseConfigurationReferenceRelativePath = ServerConfig/StagingConfig.xcconfig;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -424,6 +430,8 @@
 		};
 		84D267C52CE49E6900E63F5D /* StagingRelease */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 84D2677E2CE49CD700E63F5D /* ServerConfiguration */;
+			baseConfigurationReferenceRelativePath = ServerConfig/StagingConfig.xcconfig;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -514,6 +522,8 @@
 		};
 		84D267C72CE49E8800E63F5D /* ProductionDebug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 84D2677E2CE49CD700E63F5D /* ServerConfiguration */;
+			baseConfigurationReferenceRelativePath = ServerConfig/ProductionConfig.xcconfig;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -611,6 +621,8 @@
 		};
 		84D267C92CE49E9800E63F5D /* ProductionRelease */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 84D2677E2CE49CD700E63F5D /* ServerConfiguration */;
+			baseConfigurationReferenceRelativePath = ServerConfig/ProductionConfig.xcconfig;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
