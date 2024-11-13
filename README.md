@@ -98,7 +98,8 @@ To use the **Server Configuration Manager** in your iOS project, follow these st
 - Here’s how to use the AppAPIManager to fetch data from the server:
 
 
-   ```bash
+   
+    ```bash
    AppAPIManager.shared.fetchData(from: "users") { result in
     switch result {
     case .success(let data):
