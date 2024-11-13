@@ -58,7 +58,6 @@ To use the **Server Configuration Manager** in your iOS project, follow these st
  
   - The base URL is automatically selected based on the active build configuration. Use the ServerConfiguration.baseURL to retrieve the URL for the current environment.
 
-   ```bash
    class AppAPIManager {
     
     static let shared = AppAPIManager()
@@ -99,7 +98,7 @@ To use the **Server Configuration Manager** in your iOS project, follow these st
 
 
    
-    ```bash
+     
    AppAPIManager.shared.fetchData(from: "users") { result in
     switch result {
     case .success(let data):
