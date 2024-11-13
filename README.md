@@ -46,3 +46,50 @@ To use the **Server Configuration Manager** in your iOS project, follow these st
         - DEV for Development
         - STAGING for Staging
         - PROD for Production
+
+3. **Select the appropriate scheme**:
+
+    - In Xcode, ensure the scheme corresponds to the configuration you want to use (e.g., Staging, Production).
+
+
+## Usage
+
+ ##Accessing the Base URL
+ 
+  -The base URL is automatically selected based on the active build configuration. Use the ServerConfiguration.baseURL to retrieve the URL for the current environment.
+
+   ```bash
+   class AppAPIManager {
+    
+    static let shared = AppAPIManager()
+    
+    private init(){}
+    
+    let baseURL = ServerConfiguration.baseURL.absoluteString
+    
+    // API call example
+    func fetchData(from endpoint: String, completion: @escaping (Result<Data, Error>) -> Void) {
+        guard let url = URL(string: baseURL)?.appendingPathComponent(endpoint) else {
+            print("Invalid URL")
+            return
+        }
+        
+        var request = URLRequest(url: url)
+        request.httpMethod = "GET"
+        
+        URLSession.shared.dataTask(with: request) { (data, response, error) in
+            if let error = error {
+                completion(.failure(error))
+                return
+            }
+            
+            guard let data = data else {
+                completion(.failure(NSError(domain: "No data", code: 0, userInfo: nil)))
+                return
+            }
+            
+            completion(.success(data))
+        }.resume()
+    }
+}
+
