@@ -54,9 +54,9 @@ To use the **Server Configuration Manager** in your iOS project, follow these st
 
 ## Usage
 
- ##Accessing the Base URL
+ ## Accessing the Base URL
  
-  -The base URL is automatically selected based on the active build configuration. Use the ServerConfiguration.baseURL to retrieve the URL for the current environment.
+  - The base URL is automatically selected based on the active build configuration. Use the ServerConfiguration.baseURL to retrieve the URL for the current environment.
 
    ```bash
    class AppAPIManager {
@@ -92,4 +92,52 @@ To use the **Server Configuration Manager** in your iOS project, follow these st
         }.resume()
     }
 }
+
+## Example API Call
+
+- Here’s how to use the AppAPIManager to fetch data from the server:
+
+
+   ```bash
+   AppAPIManager.shared.fetchData(from: "users") { result in
+    switch result {
+    case .success(let data):
+        print("Received data: \(data)")
+    case .failure(let error):
+        print("Error occurred: \(error.localizedDescription)")
+    }
+}
+
+- This will automatically use the correct base URL (https://staging.com/mobile/api/v1.0/ for Staging) depending on the build configuration.
+
+
+## Contributing
+
+- We welcome contributions to this project. Please follow the steps below to contribute:
+
+    - Fork the repository.
+    - Create a new branch for your feature or bug fix.
+    - Make your changes and commit them with descriptive messages.
+    - Submit a pull request to the main branch.
+
+## Coding Guidelines:
+
+- Follow Swift's best practices for naming conventions and formatting.
+- Ensure your code passes linting and unit tests before submitting a pull request.
+
+## License
+
+- This project is licensed under the MIT License - see the LICENSE file for details.
+
+
+
+### Explanation of Sections:
+- **Overview**: Brief introduction to what the project does.
+- **Features**: Key highlights and benefits of using the configuration manager.
+- **Installation**: Steps to get the code and integrate it into your project.
+- **Usage**: Details on how to access the base URL and an example of using it for an API call.
+- **Contributing**: How others can contribute to the project, including fork/branch guidelines.
+- **License**: Information about the license type for your repository.
+
+This structure is clear, easy to follow, and contains all the necessary information for users or contributors.
 
