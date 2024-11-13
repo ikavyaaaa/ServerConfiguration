@@ -33,4 +33,10 @@ To use the **Server Configuration Manager** in your iOS project, follow these st
 
    ```bash
    git clone https://github.com/ikavyaaaa/ServerConfiguration.git
+   
+2. **Add the code to your project**:
+
+   ```bash
+   - **Copy the ServerConfiguration.swift file into your iOS project.
+   - **Ensure that you have set up the correct build configurations (Development, Staging, and Production).
 
