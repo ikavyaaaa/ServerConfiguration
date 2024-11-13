@@ -7,9 +7,9 @@
 
 import Foundation
 
-class AppAPIManager {
+class APIManager {
     
-    static let shared = AppAPIManager()
+    static let shared = APIManager()
     
     private init(){}
     
